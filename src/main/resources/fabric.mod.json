@@ -8,7 +8,8 @@
     "tyrannus"
   ],
   "contact": {
-    "discord": "tyrannus#3750"
+    "sources": "https://github.com/tyrannus00/Crystal-Tweaks/",
+    "issues": "https://github.com/tyrannus00/Crystal-Tweaks/issues"
   },
   "license": "MIT",
   "icon": "assets/crystal-tweaks/icon.png",
