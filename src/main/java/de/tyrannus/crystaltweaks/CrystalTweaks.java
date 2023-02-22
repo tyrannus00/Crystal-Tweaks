@@ -9,7 +9,7 @@ public class CrystalTweaks implements ModInitializer {
     // TODO Remove knock back caused by explosions?
     // TODO Make xp and arrows unaffected by explosion knock back
 
-    public final String MOD_ID = "crystal-tweaks";
+    public static final String MOD_ID = "crystal-tweaks";
 
     @Override
     public void onInitialize() {
