@@ -1,0 +1,11 @@
+{
+  "crystal-tweaks.midnightconfig.title": "Kristall Konfig",
+  "crystal-tweaks.midnightconfig.MIN_AGE": "Ticks existiert",
+  "crystal-tweaks.midnightconfig.MIN_AGE.tooltip": "Bestimmt für wie viele Ticks ein Kristall bereits existiert haben muss, damit er von einem Spieler zerstört werden kann.",
+  "crystal-tweaks.midnightconfig.ALWAYS_EXPLODE": "Immer Explodieren",
+  "crystal-tweaks.midnightconfig.ALWAYS_EXPLODE.tooltip": "Kristalle, die durch andere Explosionen zerstört werden, verursachen auch Explosionen.",
+  "crystal-tweaks.midnightconfig.NEED_DOUBLE_AIR": "Doppelte Luft benötigt",
+  "crystal-tweaks.midnightconfig.NEED_DOUBLE_AIR.tooltip": "Stellt 1.12 Verhalten wieder her, bei welchem beim Platzieren eines Kristalls zwei Luftblöcke darüber benötigt werden.",
+  "crystal-tweaks.midnightconfig.SMALL_ENTITY_BOX": "Kleiner Entity Check",
+  "crystal-tweaks.midnightconfig.SMALL_ENTITY_BOX.tooltip": "Prüft nur eine 1x1x1 Box nach blockierenden Entities, anstelle von 1x2x1."
+}

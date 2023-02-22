@@ -1,0 +1,11 @@
+{
+  "crystal-tweaks.midnightconfig.title": "Crystal Config",
+  "crystal-tweaks.midnightconfig.MIN_AGE": "Ticks existed",
+  "crystal-tweaks.midnightconfig.MIN_AGE.tooltip": "Determines for how many ticks a crystal must have existed until it can get destroyed by a player.",
+  "crystal-tweaks.midnightconfig.ALWAYS_EXPLODE": "Always explode",
+  "crystal-tweaks.midnightconfig.ALWAYS_EXPLODE.tooltip": "Crystals blown up by other explosions will cause explosions too.",
+  "crystal-tweaks.midnightconfig.NEED_DOUBLE_AIR": "Double Air Required",
+  "crystal-tweaks.midnightconfig.NEED_DOUBLE_AIR.tooltip": "Brings back 1.12 behavior, where end crystals need two air blocks above to be placed.",
+  "crystal-tweaks.midnightconfig.SMALL_ENTITY_BOX": "Small entity check",
+  "crystal-tweaks.midnightconfig.SMALL_ENTITY_BOX.tooltip": "When placing a crystal only a 1x1x1 box above will be checked for intersecting entities, instead of 1x2x1."
+}
