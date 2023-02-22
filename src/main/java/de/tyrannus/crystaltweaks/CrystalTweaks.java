@@ -5,9 +5,6 @@ import net.fabricmc.api.ModInitializer;
 
 public class CrystalTweaks implements ModInitializer {
 
-    // TODO Beds not placing in entities
-    // TODO Beds air place check
-    // TODO General air place check?
     // TODO Crystals, Beds & Anchors Explosion strengths?
     // TODO Remove knock back caused by explosions?
     // TODO Make xp and arrows unaffected by explosion knock back

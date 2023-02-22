@@ -16,4 +16,10 @@ public class Config extends MidnightConfig {
     @Entry
     public static boolean SMALL_ENTITY_BOX = false;
 
+    @Entry
+    public static boolean NO_AIR_PLACE = false;
+
+    @Entry
+    public static boolean BEDS_STRICT_ENTITIES = false;
+
 }

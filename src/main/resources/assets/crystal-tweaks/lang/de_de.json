@@ -7,5 +7,11 @@
   "crystal-tweaks.midnightconfig.NEED_DOUBLE_AIR": "Doppelte Luft benötigt",
   "crystal-tweaks.midnightconfig.NEED_DOUBLE_AIR.tooltip": "Stellt 1.12 Verhalten wieder her, bei welchem beim Platzieren eines Kristalls zwei Luftblöcke darüber benötigt werden.",
   "crystal-tweaks.midnightconfig.SMALL_ENTITY_BOX": "Kleiner Entity Check",
-  "crystal-tweaks.midnightconfig.SMALL_ENTITY_BOX.tooltip": "Prüft nur eine 1x1x1 Box nach blockierenden Entities, anstelle von 1x2x1."
+  "crystal-tweaks.midnightconfig.SMALL_ENTITY_BOX.tooltip": "Prüft nur eine 1x1x1 Box nach blockierenden Entities, anstelle von 1x2x1.",
+  "crystal-tweaks.midnightconfig.NO_AIR_PLACE": "Kein Luftplatzieren",
+  "crystal-tweaks.midnightconfig.NO_AIR_PLACE.tooltip": "Verhindert das Platzieren von Blöcken mitten in der Luft.",
+
+
+  "modmenu.nameTranslation.crystal-tweaks": "Kristall Tweaks",
+  "modmenu.descriptionTranslation.crystal-tweaks": "Ermöglicht das Anpassen von Kristall-PvP bezogenen Mechaniken."
 }
