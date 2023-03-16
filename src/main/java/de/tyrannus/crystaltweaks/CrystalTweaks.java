@@ -2,6 +2,10 @@ package de.tyrannus.crystaltweaks;
 
 import eu.midnightdust.lib.config.MidnightConfig;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.message.v1.ServerMessageDecoratorEvent;
+
+import java.awt.*;
+import java.util.concurrent.CompletableFuture;
 
 public class CrystalTweaks implements ModInitializer {
 
@@ -14,5 +18,13 @@ public class CrystalTweaks implements ModInitializer {
     @Override
     public void onInitialize() {
         MidnightConfig.init(MOD_ID, Config.class);
+
+        ServerMessageDecoratorEvent.EVENT.register(ServerMessageDecoratorEvent.STYLING_PHASE, (sender, message) -> {
+            if (Config.greenText && message.getString().startsWith(">")) {
+                return CompletableFuture.completedFuture(message.copy().styled(style -> style.withColor(Color.GREEN.getRGB())));
+            }
+
+            return CompletableFuture.completedFuture(message);
+        });
     }
 }

@@ -22,4 +22,7 @@ public class Config extends MidnightConfig {
     @Entry
     public static boolean bedsStrictEntities = false;
 
+    @Entry
+    public static boolean greenText = false;
+
 }
