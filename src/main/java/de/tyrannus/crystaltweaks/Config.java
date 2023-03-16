@@ -5,21 +5,21 @@ import eu.midnightdust.lib.config.MidnightConfig;
 public class Config extends MidnightConfig {
 
     @Entry
-    public static int MIN_AGE = 0;
+    public static int minAge = 0;
 
     @Entry
-    public static boolean ALWAYS_EXPLODE = false;
+    public static boolean alwaysExplode = false;
 
     @Entry
-    public static boolean NEED_DOUBLE_AIR = false;
+    public static boolean needDoubleAir = false;
 
     @Entry
-    public static boolean SMALL_ENTITY_BOX = false;
+    public static boolean smallEntityBox = false;
 
     @Entry
-    public static boolean NO_AIR_PLACE = false;
+    public static boolean noAirPlace = false;
 
     @Entry
-    public static boolean BEDS_STRICT_ENTITIES = false;
+    public static boolean bedsStrictEntities = false;
 
 }

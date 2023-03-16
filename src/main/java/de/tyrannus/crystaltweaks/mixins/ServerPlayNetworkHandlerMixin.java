@@ -33,7 +33,7 @@ public class ServerPlayNetworkHandlerMixin {
     private void airPlaceCheck(PlayerInteractBlockC2SPacket packet, CallbackInfo ci, ServerWorld world, Hand hand, ItemStack stack, BlockHitResult result, Vec3d vec, BlockPos pos, Vec3d center) {
         // Air place check
 
-        if (Config.NO_AIR_PLACE) {
+        if (Config.noAirPlace) {
             if (player.world.getBlockState(pos).isReplaceable()) {
                 ci.cancel();
             }

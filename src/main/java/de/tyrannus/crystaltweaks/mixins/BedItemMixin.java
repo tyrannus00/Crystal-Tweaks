@@ -30,7 +30,7 @@ public class BedItemMixin extends BlockItem {
         boolean bottomPieceChecks = (!checkStatePlacement() || state.canPlaceAt(context.getWorld(), context.getBlockPos()))
                 && context.getWorld().canPlace(state, context.getBlockPos(), shapeContext);
 
-        if (!bottomPieceChecks || !Config.BEDS_STRICT_ENTITIES) {
+        if (!bottomPieceChecks || !Config.bedsStrictEntities) {
             return bottomPieceChecks;
         }
 

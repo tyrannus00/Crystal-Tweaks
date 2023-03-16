@@ -23,7 +23,7 @@ public abstract class EndCrystalEntityMixin extends Entity {
     private void onDamage(DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir) {
         // Min age checking
 
-        if (!source.isExplosive() && age < Config.MIN_AGE) {
+        if (!source.isExplosive() && age < Config.minAge) {
             cir.setReturnValue(false);
         }
     }
@@ -32,7 +32,7 @@ public abstract class EndCrystalEntityMixin extends Entity {
     private boolean redirectExplosiveCheck(DamageSource source) {
         // Making the crystals also explode when destroyed by other crystals
 
-        if (Config.ALWAYS_EXPLODE) {
+        if (Config.alwaysExplode) {
             return false;
         }
 

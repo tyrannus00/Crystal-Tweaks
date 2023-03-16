@@ -12,6 +12,8 @@ Current features include:
 - A setting to prevent beds from being placed inside of entities with their head part
 
 
+The mod works server side but when using in singleplayer can be customized with mod menu.
+
 
 ## Credits
 
