@@ -24,17 +24,18 @@ public class BedItemMixin extends BlockItem {
     protected boolean canPlace(ItemPlacementContext context, BlockState state) {
         // Vanilla place check first
 
-        PlayerEntity player = context.getPlayer();
-        ShapeContext shapeContext = player == null ? ShapeContext.absent() : ShapeContext.of(player);
+        if (!super.canPlace(context, state)) {
+            return false;
+        }
 
-        boolean bottomPieceChecks = (!checkStatePlacement() || state.canPlaceAt(context.getWorld(), context.getBlockPos()))
-                && context.getWorld().canPlace(state, context.getBlockPos(), shapeContext);
-
-        if (!bottomPieceChecks || !Config.bedsStrictEntities) {
-            return bottomPieceChecks;
+        if (!Config.bedsStrictEntities) {
+            return true;
         }
 
         // Checking if there are entities in the way of the head piece
+
+        PlayerEntity player = context.getPlayer();
+        ShapeContext shapeContext = player == null ? ShapeContext.absent() : ShapeContext.of(player);
 
         Direction direction = context.getPlayerFacing();
         BlockPos headPos = context.getBlockPos().offset(direction);
