@@ -10,8 +10,8 @@ import java.util.concurrent.CompletableFuture;
 public class CrystalTweaks implements ModInitializer {
 
     // TODO Crystals, Beds & Anchors Explosion strengths?
-    // TODO Remove knock back caused by explosions?
     // TODO Make xp and arrows unaffected by explosion knock back
+    // TODO Server Side fake players with corresponding command
 
     public static final String MOD_ID = "crystal-tweaks";
 

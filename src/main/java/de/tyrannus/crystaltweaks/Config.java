@@ -25,4 +25,7 @@ public class Config extends MidnightConfig {
     @Entry
     public static boolean greenText = false;
 
+    @Entry
+    public static boolean disableExplosionKnockback = false;
+
 }
