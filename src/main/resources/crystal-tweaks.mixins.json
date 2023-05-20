@@ -4,10 +4,14 @@
   "package": "de.tyrannus.crystaltweaks.mixins",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "BedBlockMixin",
     "BedItemMixin",
     "EndCrystalEntityMixin",
     "EndCrystalItemMixin",
     "ExplosionS2CPacketMixin",
+    "LivingEntityMixin",
+    "PlayerEntityMixin",
+    "RespawnAnchorBlockMixin",
     "ServerPlayNetworkHandlerMixin"
   ],
   "injectors": {

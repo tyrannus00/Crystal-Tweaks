@@ -25,7 +25,7 @@ public class EndCrystalItemMixin {
     private void onUseOnBlock(ItemUsageContext context, CallbackInfoReturnable<ActionResult> cir) {
         // Checking for a second air block above to simulate 1.12 behaviour
 
-        if (Config.needDoubleAir) {
+        if (Config.crystalsNeedDoubleAir) {
             BlockPos pos = context.getBlockPos().up(2);
 
             if (!context.getWorld().isAir(pos)) {
@@ -44,7 +44,7 @@ public class EndCrystalItemMixin {
     private Box redirectBox(double x1, double y1, double z1, double x2, double y2, double z2) {
         // Modifying the box being checked for intersecting entities
 
-        if (Config.smallEntityBox) {
+        if (Config.crystalsSmallEntityCheck) {
             return new Box(x1, y1, z1, x2, y1 + 1, z2);
         }
 

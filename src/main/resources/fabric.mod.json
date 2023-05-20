@@ -24,7 +24,9 @@
   ],
   "depends": {
     "fabricloader": ">=0.13.3",
-    "fabric-api": "*",
+    "fabric-message-api-v1": "*",
+    "fabric-command-api-v2": "*",
+    "fabric-events-interaction-v0": "*",
     "minecraft": "1.19.x"
   }
 }

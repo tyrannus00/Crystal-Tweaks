@@ -5,16 +5,16 @@ import eu.midnightdust.lib.config.MidnightConfig;
 public class Config extends MidnightConfig {
 
     @Entry
-    public static int minAge = 0;
+    public static int crystalMinAge = 0;
 
     @Entry
-    public static boolean alwaysExplode = false;
+    public static boolean crystalsAlwaysExplode = false;
 
     @Entry
-    public static boolean needDoubleAir = false;
+    public static boolean crystalsNeedDoubleAir = false;
 
     @Entry
-    public static boolean smallEntityBox = false;
+    public static boolean crystalsSmallEntityCheck = false;
 
     @Entry
     public static boolean noAirPlace = false;
@@ -27,5 +27,20 @@ public class Config extends MidnightConfig {
 
     @Entry
     public static boolean disableExplosionKnockback = false;
+
+    @Entry
+    public static boolean noWeaponCooldown = false;
+
+    @Entry
+    public static boolean noDamageCooldown = false;
+
+    @Entry
+    public static boolean noFalldamage = false;
+
+    @Entry
+    public static boolean noAnchorExplosions = false;
+
+    @Entry
+    public static boolean noBedExplosions = false;
 
 }

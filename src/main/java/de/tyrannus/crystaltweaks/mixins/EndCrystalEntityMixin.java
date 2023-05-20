@@ -4,7 +4,10 @@ import de.tyrannus.crystaltweaks.Config;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.damage.DamageType;
 import net.minecraft.entity.decoration.EndCrystalEntity;
+import net.minecraft.registry.tag.DamageTypeTags;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -23,19 +26,25 @@ public abstract class EndCrystalEntityMixin extends Entity {
     private void onDamage(DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir) {
         // Min age checking
 
-        if (!source.isExplosive() && age < Config.minAge) {
+        if (!source.isIn(DamageTypeTags.IS_EXPLOSION) && age < Config.crystalMinAge) {
             cir.setReturnValue(false);
         }
     }
 
-    @Redirect(method = "damage", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/damage/DamageSource;isExplosive()Z"))
-    private boolean redirectExplosiveCheck(DamageSource source) {
+    @Redirect(
+            method = "damage",
+            at = @At(
+                    value = "INVOKE",
+                    target = "Lnet/minecraft/entity/damage/DamageSource;isIn(Lnet/minecraft/registry/tag/TagKey;)Z"
+            )
+    )
+    private boolean redirectExplosiveCheck(DamageSource source, TagKey<DamageType> tag) {
         // Making the crystals also explode when destroyed by other crystals
 
-        if (Config.alwaysExplode) {
+        if (Config.crystalsAlwaysExplode) {
             return false;
         }
 
-        return source.isExplosive();
+        return source.isIn(tag);
     }
 }

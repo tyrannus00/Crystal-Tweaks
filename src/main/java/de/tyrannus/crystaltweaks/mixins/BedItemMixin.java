@@ -37,7 +37,7 @@ public class BedItemMixin extends BlockItem {
         PlayerEntity player = context.getPlayer();
         ShapeContext shapeContext = player == null ? ShapeContext.absent() : ShapeContext.of(player);
 
-        Direction direction = context.getPlayerFacing();
+        Direction direction = context.getHorizontalPlayerFacing();
         BlockPos headPos = context.getBlockPos().offset(direction);
         BlockState headState = getBlock().getDefaultState().with(HorizontalFacingBlock.FACING, direction);
 
